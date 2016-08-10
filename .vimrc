@@ -79,6 +79,9 @@ set autoindent
 set cindent
 "开启语法高亮功能
 syntax enable
+set background=light
+colorscheme solarized
+let g:solarized_termcolors=256
 syntax on
 "指定配色方案为256色
 set t_Co=256
