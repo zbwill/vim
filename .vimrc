@@ -18,6 +18,8 @@ Plugin 'Lokaltog/vim-powerline'
 Plugin 'scrooloose/nerdtree'
 " YouCompleteMe智能补全插件
 Plugin 'Valloric/YouCompleteMe'
+"emmet插件，html相关"
+Plugin 'mattn/emmet-vim'
 "vim-nerdtree-tabs插件 不同的tab共享一个nerdtree
 Plugin 'https://github.com/jistr/vim-nerdtree-tabs.git'
 " The following are examples of different formats supported.
