@@ -22,6 +22,10 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 "vim-nerdtree-tabs插件 不同的tab共享一个nerdtree
 Plugin 'https://github.com/jistr/vim-nerdtree-tabs.git'
+"markdown
+Plugin 'iamcco/markdown-preview.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -229,3 +233,22 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:nerdtree_tabs_open_on_console_startup=1
 "always focus file window after startup
 let g:nerdtree_tabs_smart_startup_focus=2
+
+"----markdown插件----
+" 配置markdown-preview.vim
+let g_mkdp_path_to_chrome = "google-chrome"
+" path to the chrome or the command to open chrome(or other modern browsers)
+let g:mkdp_auto_start = 1
+" set to 1, the vim will open the preview window once enter the markdown buffer
+let g:mkdp_auto_open = 1
+" set to 1, the vim will auto open preview window when you edit the markdown file
+let g:mkdp_auto_close = 0
+" set to 1, the vim will auto close current preview window when change from markdown buffer to another buffer
+let g:mkdp_refresh_slow = 1
+" set to 1, the vim will just refresh markdown when save the buffer or leave from insert mode, default 0 is auto refresh markdown as you edit or move the cursor
+
+" 配置vim-markdown
+" 支持yaml语法
+let g:vim_markdown_frontmatter=1
+" 禁用自动折叠
+let g:vim_markdown_folding_disabled=1
